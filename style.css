@@ -14,9 +14,16 @@
 }
 
 .header {
-    background-color: aquamarine;
+    /* background-color: aquamarine;
     width: 90%;
-    margin: auto
+    margin: auto */
+    display: flex;
+    width: 120px;
+    height: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
 }
 
 .main {
@@ -114,7 +121,7 @@
     font-size: 18px;
 }
 
-.texto-no-mensaje {
+.no-mensaje-1 {
     color: var(--Gray-gray-500, #343A40);
     text-align: center;
     font-family: Inter;
@@ -123,6 +130,17 @@
     font-weight: 700;
     line-height: 120%; /* 28.8px */
 }
+
+.no-mensaje-2 {
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
 
 
 
