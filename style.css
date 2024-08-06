@@ -4,8 +4,7 @@
     background: var(--Light-blue-light-blue-100, #F3F5FC);
     color: var(--Dark-blue-dark-blue-300, #0A3871);
     font-family: Inter;
-    font-size: 32px;
-    font-weight: 400;
+    
     line-height: 150%; /* 48px */
 
 }
@@ -20,11 +19,23 @@
     margin: auto
 }
 
-main {
+.main {
+    background-color: aquamarine;
+    width: 85%;
+    margin: auto 40px auto auto;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
 
+}
+.left {
+    background-color: cadetblue;
+    max-width: 800px;
+    width: 100%;
+}
+
+.right {
+    background-color: chocolate;
+    max-width: 400px;
+    width: 100%;
 }
 
 .text_area {
@@ -42,7 +53,7 @@ main {
 
 .mensaje{
     background: white;
-    background-image: url("/assets/Muñeco.png");
+    
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -101,6 +112,16 @@ main {
 .informacion {
     color: #0A3871;
     font-size: 18px;
+}
+
+.texto-no-mensaje {
+    color: var(--Gray-gray-500, #343A40);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
 }
 
 
