@@ -1,70 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    --dark-blue: #0a3871;
+    --main-color: #f3f5fc;
+    --inter-font: "Inter", sans-serif;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --White: #FFF;
+
+}
 
 * {
-    background: var(--Light-blue-light-blue-100, #F3F5FC);
-    color: var(--Dark-blue-dark-blue-300, #0A3871);
-    font-family: Inter;
-    
-    line-height: 150%; /* 48px */
+    background: var(--main-color);
+    color: var(--dark-blue);
+    font-family: var(--inter-font);
+    line-height: 150%; 48px
+    margin: 0;
+    padding: 0;
 
 }
 
 .logo {
     margin-top: 40px;
+    width: 120px;
+    height: 48px;
 }
 
 .header {
-    /* background-color: aquamarine;
-    width: 90%;
-    margin: auto */
+   
     display: flex;
     width: 120px;
     height: 48px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
 }
 
 .main {
-    background-color: aquamarine;
     width: 85%;
     margin: auto 40px auto auto;
     display: flex;
+    justify-content: space-around;
+
 
 }
 .left {
-    background-color: cadetblue;
-    max-width: 800px;
-    width: 100%;
+    
+    /* max-width: 800px;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 944px;
+
 }
 
 .right {
-    background-color: chocolate;
-    max-width: 400px;
-    width: 100%;
+    width: 400px;
+    height: 944px;
+    flex-shrink: 0;
+    
+    border-radius: 32px;
+    background: var(--White);
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.diamond {
+    
+    width: 336px;
+    height: 304px;
+    flex-shrink: 0;
+    background: none;
+    
 }
 
 .text_area {
     border: none;
-    color: #0A3871;
+    color: var(--dark-blue);
     margin-top: 90px;
     text-transform: lowercase;
+
+    /* width: 100%; */
+    width: 680px;
+    max-width: 680px;
+    height: 66dvh;
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    margin-bottom: 3rem;
+    overflow: auto;
+
+
+    
+    font-family: var(--inter-font);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */
+
+    color: #0A3871;
+
 }
 
 ::placeholder{
-    color: #0A3871;
+    color: var(--dark-blue);
 }
 
 .text_area:focus{outline: none;}
 
-.mensaje{
+/* .mensaje{
     background: white;
     
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
-    color: #0A3871;
+    color: --dark-blue;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 98px;
@@ -73,72 +131,166 @@
 
 .mensaje:focus {
     outline: none;
-}
+} */
 
 .botones{
+    
     display: flex;
-    margin-top: 18px;
+    width: 680px;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 32px;
 
 }
 
 .btn_encriptar {
-    background-color: #0A3871;
-    border: 1px solid #0A3871;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
     border-radius: 24px;
-    color: white;
     cursor: pointer;
     height: 67px;
     width: 328px;
+
+    color: var(--White);
+    text-align: center;
+    font-family: var(--inter-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    justify-content: center;
+
+    
     
 }
 
 .btn_desencriptar {
     background: #D8DFE8;
-    border: 1px solid #0A3871;
+    border: 1px solid var(--dark-blue);
     border-radius: 24px;
-    color: #0A3871;
+    color: --dark-blue;
     cursor: pointer;
     height: 67px;
-    margin-left: 30px;
     width: 328px;
+
+    display: flex;
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+
+    text-align: center;
+    font-family: var(--inter-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+
+    
+}
+
+.button-copy{
+    background: none;
+    display: flex;
+    margin-top: 200px;
+
 }
 
 .btn_copiar {
-    border: 1px solid #0A3871;
+    border: 1px solid var(--dark-blue);
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--dark-blue);
     cursor: pointer;
+
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
     width: 336px;
+    background: none;
+
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    justify-content: center;
+
+    color: var(--dark-blue);
+    text-align: center;
+    font-family: var(--inter-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+
 
 }
 
 .informacion {
-    color: #0A3871;
-    font-size: 18px;
+    color: var(--gray-400);
+    font-family: var(--inter-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.signo{
+    width: 16px;
+    height: 16px;
+}
+
+.texto-no-mensaje {
+    background: none;
+    width: 336px;
+
 }
 
 .no-mensaje-1 {
-    color: var(--Gray-gray-500, #343A40);
+    margin: 0 0 0 8;
+    display: flex;
+    align-self: stretch;
+    background: none;
+    color: var(--gray-500);
     text-align: center;
-    font-family: Inter;
+    font-family: var(--inter-font);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 28.8px */
+
+
+
 }
 
 .no-mensaje-2 {
-    color: var(--Gray-gray-400, #495057);
+    margin: 8 0 0 0;
+    display: flex;
+    align-self: stretch;
+    background: none;
+    color: var(--gray-400);
     text-align: center;
-    font-family: Inter;
+    font-family: var(--inter-font);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
+
+
 }
 
 
