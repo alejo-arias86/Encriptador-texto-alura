@@ -6,7 +6,7 @@ function btn_encriptar() {
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = "none";
+    // mensaje.style.backgroundImage = "none";
 }
 
 function btn_desencriptar() {
