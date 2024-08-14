@@ -115,6 +115,7 @@
     outline: none;
     margin-bottom: 3rem;
     overflow: auto;
+    resize: none;
 
 
     
@@ -146,6 +147,7 @@
     width: 336px;
     height: 781px;
     flex-shrink: 0;
+    resize: none;
 
     font-family: var(--inter-font);
     font-size: 24px;
@@ -321,6 +323,22 @@
 .hidden {
     display: none;
 }
+
+.texto-copiado{
+    margin: 0 0 0 8;
+    display: none;
+    align-self: center;
+    
+    background: none;
+    color: var(--gray-500);
+    text-align: center;
+    font-family: var(--inter-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+
 
 
 
